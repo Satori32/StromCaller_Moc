@@ -14,9 +14,9 @@ struct StromCaller {
 	bool B;//ano sys.
 };
 
-template<class T,void* A>
+template<class T,T X,class H,H Y,void* A>
 StromCaller ConstructStromCaller<T, A>() {
-	StromCaller S = { A,S };
+	StromCaller S = { T,H,A,X,Y };
 
 	return S;
 }
